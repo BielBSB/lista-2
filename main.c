@@ -3,20 +3,19 @@
 
 int main() {
 	
-	float Dt,Cg,Cm;
+	int n1,n2;
 	
-	printf("Consumo medio\n");
+	printf("Informe o primeiro valor: ");
+	scanf("%d",&n1);
 	
-	printf("Informe a distancia total percorrida: ");
-	scanf("%f",&Dt);
+	printf("Informe o segundo valor: ");
+	scan("%d",&n2);
 	
-	printf("Informe a quantidade de combustivel gasto: ");
-	scanf("%f",&Cg);
-
-	Cm = Dt/Cg;	
-	
-	printf("O consumo medio e %.2f",Cm);
-
+	if(n1 > n2){
+		printf("O valor %d e o maior",n1);
+	}else if(n1<n2){
+		printf("O valor %d e o maior",n2);		
+	}
 	
 	return 0;
 }
