@@ -3,19 +3,19 @@
 
 int main() {
 	
-	int n1,n2;
+	float Sal,aumento;
 	
-	printf("Informe o primeiro valor: ");
-	scanf("%d",&n1);
+	printf("Informe seu salario: ");
+	scanf("%f",&Sal);
 	
-	printf("Informe o segundo valor: ");
-	scan("%d",&n2);
+	if(Sal<=1000 && Sal>0 ){
+	 aumento = Sal + Sal*0.1;
 	
-	if(n1 > n2){
-		printf("O valor %d e o maior",n1);
-	}else if(n1<n2){
-		printf("O valor %d e o maior",n2);		
+	}else if(Sal>1000){
+		printf("Salario inexistente");
 	}
+	
+	printf("Salario e: %.2f",aumento);
 	
 	return 0;
 }
